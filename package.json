@@ -1,0 +1,8 @@
+{
+    "name": "new-tab-playground",
+    "author": "Anden Wieseler",
+    "version": "0.1.0",
+    "scripts": {
+        "build": "sass --no-source-map scss/layout.scss layout.css"
+    }
+}

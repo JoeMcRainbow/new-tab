@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome back!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div id="sidebarImage" onclick="updateContent('home')">
+            <div class="clip">ANDEN<br>WIESELER</div>
+        </div>
+        <div id="sidebarContent">
+            <div class="sidebarButton" onclick="updateContent('aboutMe')">
+                <p>ABOUT ME</p>
+            </div>
+            <div class="sidebarButton" onclick="updateContent('myWork')">
+                <p>MY WORK</p>
+            </div>
+        </div>
+    </div>
+    <div id="mainContent">
+        <form action="https://www.google.com/search" id="searchFormMain" method="get" name="searchform">
+            <input autocomplete="on" id="searchBoxMain" name="q" placeholder="Search the web with Google..." required="required"  type="text">
+            <button id="searchButton" type="submit">
+                <img src="./assets/search.svg" alt="Search" style="width: 20px; height: 20px; color: white;">
+            </button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>
